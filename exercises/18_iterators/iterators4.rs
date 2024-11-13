@@ -10,6 +10,10 @@ fn factorial(num: u64) -> u64 {
     // - additional variables
     // For an extra challenge, don't use:
     // - recursion
+    let data = 1..=num;
+    let result = data.fold(1, |accumulator, current| accumulator * current );
+    result
+
 }
 
 fn main() {
